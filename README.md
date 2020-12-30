@@ -2,7 +2,7 @@
 Tiny read-only unlocker for MS Office documents
 
 # Features
-Unoffice can remove read-only protection of:
+Unoffice can remove the read-only protection of:
   - Full and partial protected Word files.
   - Full Excel file and partially protected sheets
   - PowerPoint protected files.

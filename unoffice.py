@@ -36,9 +36,9 @@ def omit_protection_code(file, regex):
     locked_xml = re.sub(
                     regex, 
                     '', 
-                    open(file).read()
+                    open(file, encoding='utf-8').read()
                 )
-    open(file, 'w').write(locked_xml)
+    open(file, 'w', encoding='utf-8').write(locked_xml)
 
 def handle_xlsx_sheets(file, regex):
     '''
@@ -83,4 +83,5 @@ def argparse(args=sys.argv[1:]):
     
     [print, str][valid_paths != []](HELP)
 
-[int, argparse][__name__ == '__main__']()
+if __name__ == '__main__':
+    argparse()
